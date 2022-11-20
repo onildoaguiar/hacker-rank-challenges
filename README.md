@@ -3,5 +3,6 @@ This repository contains solutions to various challenges on different domains of
 
 ## Challenges
 
-### Data Strucutes
-- Left Rotation
+### Data Structures
+- Arrays
+  - Left Rotation
