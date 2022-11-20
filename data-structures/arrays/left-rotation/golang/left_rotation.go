@@ -16,20 +16,21 @@ import (
 func rotateLeft(d int32, arr []int32) []int32 {
     var count = d
     var rotatedArr = arr
-    var arrLenght = len(rotatedArr)
+    var arrLength = len(rotatedArr)
     
     for ok := true; ok; ok = ( count > 0) { 
-        var tempArr = make([]int32, arrLenght)
+        var tempArr = make([]int32, arrLength)
         var first int32
         
-        for i := 0; i < arrLenght; i++ {
+        for i := 0; i < arrLength; i++ {
             if i == 0 {
                 first = rotatedArr[i]
             } else {
                 tempArr[i-1] = rotatedArr[i]
             }
         }
-        tempArr[arrLenght-1] = first
+        
+        tempArr[arrLength-1] = first
         rotatedArr = tempArr
     
         count -= 1;
