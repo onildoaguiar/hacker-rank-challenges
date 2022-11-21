@@ -14,14 +14,13 @@ import (
  */
 
 func rotateLeft(d int32, arr []int32) []int32 {
-    var count = d
-    var rotatedArr = arr
-    var arrLength = len(rotatedArr)
-    
+    count := d
+    rotatedArr := arr
+    arrLength := len(rotatedArr)
+    tempArr := make([]int32, arrLength)
+    var first int32
+
     for ok := true; ok; ok = ( count > 0) { 
-        var tempArr = make([]int32, arrLength)
-        var first int32
-        
         for i := 0; i < arrLength; i++ {
             if i == 0 {
                 first = rotatedArr[i]
